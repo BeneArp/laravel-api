@@ -45,4 +45,10 @@ class PageController extends Controller
         return response()->json($response);
     }
 
+    public function ProjectsByType($slug){
+
+        $projects = Type::where('slug', $slug)->with('projects')->first();
+
+        return response()->json($projects);
+    }
 }
