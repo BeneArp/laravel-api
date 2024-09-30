@@ -24,3 +24,4 @@ Route::get('/tecnologie', [PageController::class, 'technologies']);
 Route::get('/tipi', [PageController::class, 'types']);
 Route::get('/dettagli-post/{slug}', [PageController::class, 'projectDetails']);
 Route::get('/progetti-per-tipo/{slug}', [PageController::class, 'ProjectsByType']);
+Route::get('/progetti-per-tecnologia/{slug}', [PageController::class, 'ProjectsByTechnologies']);
